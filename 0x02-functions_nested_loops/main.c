@@ -1,4 +1,4 @@
-#include "1-main.c"
+#include "main.c"
 
 /**
  * main - Entry point
@@ -8,5 +8,5 @@
 int main(void)
 {
 	print_alphabet();
-	return
+	return (0);
 }
