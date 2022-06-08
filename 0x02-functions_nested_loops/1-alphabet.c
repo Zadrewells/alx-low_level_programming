@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- *  print_alphabet - Function prototype
- *  Description: Prints the letters of the alphabet in lowercase
- *  Return: void
+ * print_alphabet - print alphabet
+ *
+ * Return: void
  */
 void print_alphabet(void)
 {
-	char x = 'a';
+	char letter = 'a';
 
-	while (x <= 'z')
+	while (letter <= 'z')
 	{
-		_putchar(x);
-		x++;
-	}
+		_putchar(letter);
+		letter++;
 
+	}
 	_putchar('\n');
 }
