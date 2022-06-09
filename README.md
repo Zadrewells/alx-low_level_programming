@@ -1,1 +1,1 @@
-0x01. C - Variable, if ,else
+main tests function that prints if integer is positive or negative
