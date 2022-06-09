@@ -18,7 +18,7 @@ int main(void)
 	 *putchar(i);
 	 * }
 	 */
-	printf("%d is the largest number\n", largest);
+	printf("Infinite loop avoided! \\o/\n");
 
 	return (0);
 }
