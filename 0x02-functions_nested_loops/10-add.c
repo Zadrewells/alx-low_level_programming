@@ -4,7 +4,7 @@
  * @n: The multiplication table requested.
  * Return: Nothing.
  */
-void print_times_table(int n)
+void print_times_table(int int)
 {
 	int i, j, res;
 
