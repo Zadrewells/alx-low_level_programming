@@ -16,7 +16,7 @@ int main(void)
 	 * while (i < 10)
 	 * {
 	 *putchar(i);
-	 *}
+	 * }
 	 */
 	printf("%d is the largest number\n", largest);
 
