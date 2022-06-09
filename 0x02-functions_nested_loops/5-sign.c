@@ -4,7 +4,7 @@
  * print_sign - Entry point
  * @n: Number to be checked
  *
- * Return: 1 or 0 0r -1
+ * Return: 1 , 0 0r -1
  */
 
 int print_sign(int n)
@@ -22,7 +22,7 @@ int print_sign(int n)
 	else
 	{
 		_putchar('-');
-		return ('-1');
+		return (-1);
 	}
 }
 
