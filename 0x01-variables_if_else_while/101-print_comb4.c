@@ -6,21 +6,23 @@
  */
 int main(void)
 {
-	int c, i, k;
+	int x1;
+	int x2;
+	int y1;
+	int y2;
 
-	for (c = '0'; c <= '9'; c++)
+	for (x1 = 0; x1 < 10; ++x1)
 	{
-		for (i = '0'; i <= '9'; i++)
+		for (y2 = ((x1 == y1) ? (x2 + 1) : 0); y2 < 10; ++y2)
 		{
-			for (k = '0'; k <= '9'; k++)
-			{
-				if (c < i && i < k)
-				{
-					putchar(c);
-					putchar(i);
-					putchar(k);
+			putchar ('0' + x1);
+			putchar ('0' + x2);
+			putchar (' ');
+			putchar ('0' + y1);
+			putchar ('0' + y2);
 
-					if (c != '7')
+					if (x1 != 9 || x2 != 8 ||
+						y1 != 9 || y2 != 9)
 					{
 						putchar(',');
 						putchar(' ');
@@ -34,3 +36,4 @@ int main(void)
 
 	return (0);
 }
+
