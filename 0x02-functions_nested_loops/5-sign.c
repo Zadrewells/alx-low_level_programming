@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * print_sign - Function prototype
+ * print_sign - Entry point
+ * @n: Number to be checked
  *
- * @n: the number to be checked
- * Return: 1 if positive, 0 if equals to 0 otherwise -1
+ * Return: 1 or 0 0r -1
  */
+
 int print_sign(int n)
 {
-
 	if (n > 0)
 	{
 		_putchar('+');
@@ -22,7 +22,7 @@ int print_sign(int n)
 	else
 	{
 		_putchar('-');
-		return (-1);
+		return ('-1');
 	}
-
 }
+
