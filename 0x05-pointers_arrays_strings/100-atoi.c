@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _atoi - convert a string to an integer
+ * _aoi - convert a string to an integer
  * @s: the string to be converted
  * Return: the integer value of the string
  */
@@ -32,7 +32,7 @@ int _atoi(char *s)
 		else
 			break;
 	}
-	for (i = count - size; i, count; i++)
+	for (i = count - size; i < count; i++)
 	{
 		oi += (*(s + i) - 48) * m;
 		m /= 10;
