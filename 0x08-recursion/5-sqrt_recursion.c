@@ -22,10 +22,10 @@ int _sqrt(int n, int x)
 {
 	if (n < 0)
 		return (-1);
-		{
+
 			if ((x * x) > n)
 				return (-1);
-		}
-	return (x * x == n ? x : _sqrt(n, x + 1))
+
+	return (x * x == n ? x : _sqrt(n, x + 1));
 }
 
