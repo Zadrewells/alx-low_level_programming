@@ -11,24 +11,24 @@
 
 char *_strup(char *str)
 {
-	char *duplicate;
-	int index, len = 0;
+	char *str_out;
+	int i;
+	int x;
 
-	if (str == NULL)
-		return (NULL);
+	if (str == 0)
+		return (0);
 
-	for (index = 0; str[index]; index++)
-		len++;
+	for (i = 0; str[i] != '\0'; i++)
+	{
+	}
 
-	duplicate = malloc(sizeof(char) * (len + 1));
+	str_out = (char *)malloc(sizeof(char) * (i + 1));
 
-	if (duplicate == NULL)
-		return (NULL);
+	if (str_out == 0)
+		return (0);
 
-	for (index = 0; str[index]; index++)
-		duplicate[index] = str[index];
+	for (x = 0; x <= i; x++)
+		str_out[x] = str[x]
 
-	duplicate[len] = '\0';
-
-	return (duplicate);
+	return (str_out);
 }
