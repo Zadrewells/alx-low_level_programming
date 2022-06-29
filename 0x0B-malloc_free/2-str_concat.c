@@ -39,7 +39,7 @@ char *str_concat(char *s1, char *s2)
 		if (i < x)
 			m[i] = s1[i];
 		else
-			m[i] = s@[i - x];
+			m[i] = s2[i - x];
 	}
 
 	m[i] = '\0';
