@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _strup - Function prototype
+ * _strdup - Function prototype
  * Description: Returns a pointer to a newly-allocated space in memory
  * @str: The string to be copied
  *
@@ -9,26 +9,26 @@
  * Otherwise - a pointer to the duplicated string
  */
 
-char *_strup(char *str)
+char *_strdup(char *str)
 {
-	char *str_out;
-	int i;
-	int x;
+	int i = 1, j = 0;
+	char *s;
 
 	if (str == 0)
-		return (0);
+	return (0);
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (str[i])
+	i++;
+
+	s = (char *)malloc(i * sizeof(char) + 1);
+	if (s == NULL)
+		return (NULL);
+
+	while (j < i)
 	{
+		s[j] = str[j];
+		j++;
 	}
-
-	str_out = (char *)malloc(sizeof(char) * (i + 1));
-
-	if (str_out == 0)
-		return (0);
-
-	for (x = 0; x <= i; x++)
-		str_out[x] = str[x]
-
-	return (str_out);
+	s[j] = '\0';
+	return (s);
 }
