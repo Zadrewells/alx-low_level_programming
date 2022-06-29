@@ -3,11 +3,12 @@
 /**
  * main - function prototype
  * Description: prints the program name, followed by a new line
- * @agrc: the number of arguments supplied to the program
- * @argv: an array of pointers to arguement strings
- * Return: Always 0
+ * @agrc: argc parameter
+ * @argv: an array of a command listed
+ * Return: 0 for success
  */
-int main(int argc; char *argv[])
+
+int main(int argc _attribute_((unused)), char *argv[])
 {
 	printf("%s\n", *argv[0]);
 
