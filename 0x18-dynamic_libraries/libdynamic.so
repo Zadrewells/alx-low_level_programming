@@ -1,4 +1,11 @@
-$(SHARED_LIB):
-    $(CC) -fPIC -c file1.c -o file1.o $(CFLAGS)
-    $(CC) -fPIC -c file2.c -o file2.o $(CFLAGS)
-    $(CC) -shared -o $(SHARED_LIB) -L$/lib -ldl $(_OBJS)
+
+clang hello.c -o hello -Igreeting greeting.so #<= greeting.so added
+
+
+LD_LIBRARY_PATH=. ./hello 
+
+
+clang hello.c -o hello -Igreeting $PWD/greeting.so
+
+
+clang hello.c -o hello -Igreeting '-Wl,-rpath=$ORIGIN' greeting.so
