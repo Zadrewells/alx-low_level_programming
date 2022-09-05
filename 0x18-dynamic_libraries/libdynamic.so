@@ -1,11 +1,1 @@
-
-clang hello.c -o hello -Igreeting greeting.so #<= greeting.so added
-
-
-LD_LIBRARY_PATH=. ./hello 
-
-
-clang hello.c -o hello -Igreeting $PWD/greeting.so
-
-
-clang hello.c -o hello -Igreeting '-Wl,-rpath=$ORIGIN' greeting.so
+gcc -shared foo.o ... -o libfoo.so -Wl,-rpath='$ORIGIN/' -L... -lbar -lbaz
