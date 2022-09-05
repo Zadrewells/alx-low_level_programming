@@ -1,1 +1,4 @@
-gcc -shared foo.o ... -o libfoo.so -Wl,-rpath='$ORIGIN/' -L... -lbar -lbaz
+$(SHARED_LIB);
+	$(CC) -fPIC -c file1.c -o file1.o $(CFLAGS)
+	$(CC) -fPIC -c file2.c -o file2.o $(CFLAGS)
+	$(CC) -share -o $(SHARED_LIB) -L$/lib -ldl $(_OBJS)
