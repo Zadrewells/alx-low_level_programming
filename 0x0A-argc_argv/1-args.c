@@ -11,6 +11,5 @@
 int main(int arg, char _attribute_((unused)) *argv[])
 {
 	printf("%d\n", argc - 1);
-
 	return (0);
 }
